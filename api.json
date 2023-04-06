@@ -1,0 +1,81 @@
+{
+
+    "BackgroundUrl": "https://wmimages.goplay.be/styles/f7331df9e0140370408293ff5186b3cc1ba2ff25/meta/p423-005demolgb10gph3840x2160-rrs8nl.jpg?style=W3sianBlZyI6eyJxdWFsaXR5Ijo5MH19LHsicmVzaXplIjp7ImZpdCI6ImNvdmVyIiwid2lkdGgiOjM4NDAsImhlaWdodCI6MjE2MCwiZ3Jhdml0eSI6bnVsbCwid2l0aG91dEVubGFyZ2VtZW50IjpmYWxzZX19XQ==&sign=c6e2eaecc4c2d8c52c1662896e7de4fcf8fe3dee3a1a025fdca3acc595d8e7de",
+  
+    "Title": "DeebugTV",
+  
+    "LogoUrl": "https://example.com/logo.png",
+  
+    "Version": "v0.1",
+  
+    "Channels": [
+  
+      {
+  
+        "name": "VTM GO",
+  
+        "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/VTMGOLOGO.png",
+  
+        "url": "https://vtm.be/vtmgo"
+  
+      },
+  
+      {
+  
+        "name": "VRT Max",
+  
+        "logoUrl": "https://play-lh.googleusercontent.com/JctrGiGIMSx1fBd3gzhZxosUqVlN7GYqln3tN8e_Qu-2QYyNbyguhnCDcCetQGcmJguc",
+  
+        "url": "https://www.vrt.be/vrtnu/"
+  
+      },
+  
+      {
+  
+        "name": "GoPlay",
+  
+        "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/GoPlay.png/640px-GoPlay.png",
+  
+        "url": "https://www.goplay.be/"
+  
+      },
+  
+      {
+  
+        "name": "Youtube",
+  
+        "logoUrl": "https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6-1200-80.jpg",
+  
+        "url": "https://www.youtube.com"
+  
+      }
+  
+    ],
+  
+    "Series": [
+  
+      {
+  
+        "name": "Home And Away",
+  
+        "logoUrl": "https://fontsinuse.com/static/inline-images/319/2013.jpeg",
+  
+        "url": "https://vtm.be/vtmgo"
+  
+      },
+  
+      {
+  
+        "name": "De Mol",
+  
+        "logoUrl": "https://wmimages.goplay.be/styles/1721d389051b694370e0c3977cca45b96f1d9741/content_block_cta/groepsbeeldcowboy9-rrs61g.jpg?style=W3sianBlZyI6eyJxdWFsaXR5Ijo5NX19LHsicmVzaXplIjp7ImZpdCI6Imluc2lkZSIsIndpZHRoIjoxMzk0LCJoZWlnaHQiOjc1Miwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfX1d&sign=cbecd878f6f54038432e1d545df650096527fd20243fce1bb619db1acb26cd5e",
+  
+        "url": "https://www.goplay.be/de-mol"
+  
+      }
+  
+    ]
+  
+  }
+  
+  
