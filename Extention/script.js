@@ -9,7 +9,7 @@ function loadAPI() {
       const banner = document.querySelector(".banner");
       banner.style.backgroundImage = `url(${data.BackgroundUrl})`;
       banner.querySelector(".title").textContent = data.Title;
-      banner.querySelector(".info").textContent = data.Version;
+      banner.querySelector(".info").textContent = data.Version + " | by " + data.Creator;
       banner.querySelector(".info").href = data.Github;
       banner.querySelector(".logo").src = data.LogoUrl;
 
