@@ -9,6 +9,8 @@ function loadAPI() {
       const banner = document.querySelector(".banner");
       banner.style.backgroundImage = `url(${data.BackgroundUrl})`;
       banner.querySelector(".title").textContent = data.Title;
+      banner.querySelector(".info").textContent = data.Version;
+      banner.querySelector(".info").href = data.Github;
       banner.querySelector(".logo").src = data.LogoUrl;
 
       // Create the channel list
@@ -44,7 +46,7 @@ function loadAPI() {
       const series = Array.from(document.querySelectorAll(".series"));
       
 
-      
+
       const lists = document.querySelectorAll('.list');
 
       let selectedRow = 0;
