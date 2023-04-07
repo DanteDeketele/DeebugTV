@@ -43,7 +43,7 @@ function loadAPI() {
 
       // Create the series list
       const liveList = document.querySelector(".live-list");
-      data.Series.forEach(series => {
+      data.Live.forEach(series => {
         const link = document.createElement("a");
         link.href = series.url;
         link.classList.add("live");

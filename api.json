@@ -112,17 +112,22 @@
     ],
     "Live": [  {    
       "title": "VTM",    
-      "logo": "https://www.vtm.be/themes/custom/vtm_2019/images/logo.svg",    
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a6/VTMGOLOGO.png",    
       "url": "https://vtm.be/live"  
       },  
       {    
         "title": "Eén",    
-        "logo": "https://www.een.be/profiles/een/themes/custom/een/assets/images/een_logo.svg",    
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/E%C3%A9n_logo_2019.svg/106px-E%C3%A9n_logo_2019.svg.png",    
         "url": "https://www.een.be/live"  
         },  
         {    
+          "title": "VRTNWS",    
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/VRT_NWS.png/120px-VRT_NWS.png",    
+          "url": "https://www.een.be/live"  
+          },  
+        {    
           "title": "Canvas",    
-          "logo": "https://www.canvas.be/themes/custom/canvas/assets/images/canvas_logo.svg",    
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Canvas-2015.svg/120px-Canvas-2015.svg.png",    
           "url": "https://www.canvas.be/live"  
           },  
           {    
