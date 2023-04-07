@@ -66,7 +66,7 @@ function loadAPI() {
         document.querySelectorAll('.item').forEach(item => {
           item.classList.remove('selected');
         });
-      
+        selectedCol = Math.min(selectedCol, lists[selectedRow].querySelectorAll('.item').length - 1);
         // Add highlight to selected item
         const selectedItem = lists[selectedRow].querySelectorAll('.item')[selectedCol];
         selectedItem.classList.add('selected');
