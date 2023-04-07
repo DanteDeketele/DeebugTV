@@ -72,7 +72,7 @@ function loadAPI() {
 
       const lists = document.querySelectorAll('.list');
 
-      let selectedRow = 0;
+      let selectedRow = 1;
       let selectedCol = 0;
       
       function highlight() {
@@ -97,7 +97,7 @@ function loadAPI() {
           selectedRow++;
         }
 
-        if (selectedRow === 0) {
+        if (selectedRow <= 1) {
           // Scroll to the top of the page when the first row is selected
           window.scroll({ top: 0, left: 0, behavior: 'smooth' });
         } else {
