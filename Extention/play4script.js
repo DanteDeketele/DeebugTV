@@ -1,3 +1,45 @@
+console.log("DeebugTV Loaded.");
+
+window.addEventListener('load', function() {
+  var player = document.querySelector('.theoplayer');
+// Initialize fullscreen state
+var isFullscreen = false;
+
+// Add a keyboard event listener
+document.addEventListener('keydown', function(event) {
+  if (event.keyCode === 70) { // F key
+    if (!isFullscreen) { // If not already fullscreen
+      if (player.requestFullscreen) {
+        player.requestFullscreen();
+      } else if (player.mozRequestFullScreen) {
+        player.mozRequestFullScreen(); // Firefox
+      } else if (player.webkitRequestFullscreen) {
+        player.webkitRequestFullscreen(); // Chrome, Safari & Opera
+      } else if (player.msRequestFullscreen) {
+        player.msRequestFullscreen(); // Edge
+      }
+      isFullscreen = true;
+    } else { // If already fullscreen
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen(); // Firefox
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen(); // Chrome, Safari & Opera
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen(); // Edge
+      }
+      isFullscreen = false;
+    }
+  }
+});
+
+
+});
+
+
+
+
 // Check if there are any row classes on the page
 const rows = document.querySelectorAll('.flickity-slider, .theoplayer, .hero-video__actions, .hero__actions, .header');
 
