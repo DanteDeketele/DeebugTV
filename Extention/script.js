@@ -150,6 +150,13 @@ function loadAPI() {
 
 loadAPI();
 
+document.getElementById('shutdown-link').addEventListener('click', function(event) {
+  chrome.runtime.sendMessage({command: 'shutdown'}, function(response) {
+    console.log('Shutdown command sent.');
+  });
+  event.preventDefault();
+});
+
 
 
 
