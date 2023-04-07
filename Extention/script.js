@@ -27,6 +27,20 @@ function loadAPI() {
         channelList.appendChild(link);
       });
 
+      // Create the channel list
+      const StreamingList = document.querySelector(".streaming-list");
+      data.StreamingServices.forEach(channel => {
+        const link = document.createElement("a");
+        link.href = channel.url;
+        link.classList.add("streaming");
+        link.classList.add("item");
+        const logo = document.createElement("img");
+        logo.src = channel.logoUrl;
+        logo.alt = channel.name;
+        link.appendChild(logo);
+        StreamingList.appendChild(link);
+      });
+
       // Create the series list
       const seriesList = document.querySelector(".series-list");
       data.Series.forEach(series => {
@@ -40,11 +54,6 @@ function loadAPI() {
         link.appendChild(logo);
         seriesList.appendChild(link);
       });
-
-      // Set up arrow keyboard navigation
-      const channels = Array.from(document.querySelectorAll(".channel"));
-      const series = Array.from(document.querySelectorAll(".series"));
-      
 
 
       const lists = document.querySelectorAll('.list');
