@@ -109,7 +109,38 @@
   
       }
   
-    ]
+    ],
+    "Live": [  {    
+      "title": "VTM",    
+      "logo": "https://www.vtm.be/themes/custom/vtm_2019/images/logo.svg",    
+      "url": "https://vtm.be/live"  
+      },  
+      {    
+        "title": "Eén",    
+        "logo": "https://www.een.be/profiles/een/themes/custom/een/assets/images/een_logo.svg",    
+        "url": "https://www.een.be/live"  
+        },  
+        {    
+          "title": "Canvas",    
+          "logo": "https://www.canvas.be/themes/custom/canvas/assets/images/canvas_logo.svg",    
+          "url": "https://www.canvas.be/live"  
+          },  
+          {    
+            "title": "Vier",    
+            "logo": "https://www.vier.be/themes/custom/vier/assets/images/logo_vier.svg",    
+            "url": "https://www.vier.be/live"  
+            },  
+            {    
+              "title": "Vijf",    
+              "logo": "https://www.vijf.be/themes/custom/vijf/assets/images/logo_vijf.svg",    
+              "url": "https://www.vijf.be/live"  
+              },  
+              {    
+                "title": "Zes",    
+                "logo": "https://www.zes.be/themes/custom/zes/assets/images/logo_zes.svg",   
+                "url": "https://www.zes.be/live"  
+                }]
+
   
   }
   

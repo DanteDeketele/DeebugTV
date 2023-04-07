@@ -42,6 +42,20 @@ function loadAPI() {
       });
 
       // Create the series list
+      const liveList = document.querySelector(".live-list");
+      data.Series.forEach(series => {
+        const link = document.createElement("a");
+        link.href = series.url;
+        link.classList.add("live");
+        link.classList.add("item");
+        const logo = document.createElement("img");
+        logo.src = series.logoUrl;
+        logo.alt = series.name;
+        link.appendChild(logo);
+        liveList.appendChild(link);
+      });
+
+      // Create the series list
       const seriesList = document.querySelector(".series-list");
       data.Series.forEach(series => {
         const link = document.createElement("a");
