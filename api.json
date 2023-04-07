@@ -42,8 +42,9 @@
   
         "url": "https://www.goplay.be/"
   
-      },
-  
+      }
+    ],
+    "StreamingServices": [
       {
 
         "name": "Netflix",
@@ -66,26 +67,6 @@
     
       {
     
-        "name": "HBO Max",
-    
-        "logoUrl": "https://i.imgur.com/Uq3cm8p.png",
-    
-        "url": "https://www.hbomax.com/"
-    
-      },
-    
-      {
-    
-        "name": "Hulu",
-    
-        "logoUrl": "https://i.imgur.com/X7YCuYt.png",
-    
-        "url": "https://www.hulu.com/"
-    
-      },
-    
-      {
-    
         "name": "Amazon Prime Video",
     
         "logoUrl": "https://i.imgur.com/hT8TJ80.png",
@@ -101,16 +82,6 @@
         "logoUrl": "https://i.imgur.com/3DeuFO7.png",
     
         "url": "https://tv.youtube.com/welcome/"
-    
-      },
-    
-      {
-    
-        "name": "Peacock",
-    
-        "logoUrl": "https://i.imgur.com/RJvn3bX.png",
-    
-        "url": "https://www.peacocktv.com/"
     
       }
   
