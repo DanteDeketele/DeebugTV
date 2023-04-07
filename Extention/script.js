@@ -76,9 +76,19 @@ function loadAPI() {
         const key = e.keyCode;
       
         if (key === 38 && selectedRow > 0) { // up arrow
+          e.preventDefault();
           selectedRow--;
         } else if (key === 40 && selectedRow < lists.length - 1) { // down arrow
+          e.preventDefault();
           selectedRow++;
+        }
+
+        if (selectedRow === 0) {
+          // Scroll to the top of the page when the first row is selected
+          window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+        } else {
+          // Scroll to the selected row
+          lists[selectedRow].scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
       
         highlight();
