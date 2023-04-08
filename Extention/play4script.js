@@ -7,6 +7,7 @@ var isFullscreen = false;
 document.addEventListener('keydown', function(event) {
   if (event.keyCode === 70) { // F key
     var player = document.querySelector('.theoplayer');
+    if (player == null) return;
     if (!isFullscreen) { // If not already fullscreen
       if (player.requestFullscreen) {
         player.requestFullscreen();
