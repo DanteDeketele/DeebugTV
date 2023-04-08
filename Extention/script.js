@@ -1,4 +1,4 @@
-const apiURL = "https://raw.githubusercontent.com/MrDeeGames/DeebugTV/main/api.json";
+const apiURL = "https://raw.githubusercontent.com/DanteDeketele/DeebugTV/main/api.json";
 
 // Load the API data and update the page
 function loadAPI() {
