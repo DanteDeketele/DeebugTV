@@ -132,3 +132,16 @@
     transform: translateY(20px);
   }
   
+  .live-list{
+  }
+
+  .live-list .live-item{
+    height: 50px;
+    width: 50px;
+  }
+
+  .live-list .live-item:hover,
+  .live-list .live-item.selected {
+    height: 50px;
+    width: 50px;
+  }
