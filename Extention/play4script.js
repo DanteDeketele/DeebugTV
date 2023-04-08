@@ -1,13 +1,12 @@
 console.log("DeebugTV Loaded.");
 
 window.addEventListener('load', function() {
-  var player = document.querySelector('.theoplayer');
-// Initialize fullscreen state
 var isFullscreen = false;
 
 // Add a keyboard event listener
 document.addEventListener('keydown', function(event) {
   if (event.keyCode === 70) { // F key
+    var player = document.querySelector('.theoplayer');
     if (!isFullscreen) { // If not already fullscreen
       if (player.requestFullscreen) {
         player.requestFullscreen();
