@@ -14,8 +14,7 @@
       "128": "Logo.png"
     },
     "permissions": [
-    "tabs",
-    "system.power"
+    "tabs"
     ],
     "background": {
       "service_worker": "background.js"
