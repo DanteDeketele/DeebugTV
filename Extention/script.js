@@ -72,7 +72,7 @@ function loadAPI() {
 
       const lists = document.querySelectorAll('.list');
 
-      let selectedRow = 1;
+      let selectedRow = 0;
       let selectedCol = 0;
       
       function highlight() {
