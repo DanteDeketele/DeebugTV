@@ -36,6 +36,20 @@
           ],
           "js": [
             "vrtscript.js", "loader.js"
+          ],
+          "css": [
+            "vrtstyle.css"
+          ]
+        },
+        {
+          "matches": [
+            "https://vtm.be/vtmgo*"
+          ],
+          "js": [
+            "vtmscript.js", "loader.js"
+          ],
+          "css": [
+            "vtmstyle.css"
           ]
         }
       ]

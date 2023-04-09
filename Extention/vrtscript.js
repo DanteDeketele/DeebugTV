@@ -1,5 +1,36 @@
 console.log("DeebugTV Loaded.");
 
+var isFullscreen = false;
+document.addEventListener('keydown', (event) => {
+if (event.keyCode === 70) { // F key
+      var player = document.querySelector('.theoplayer');
+      if (player == null) return;
+      if (!isFullscreen) { // If not already fullscreen
+        if (player.requestFullscreen) {
+          player.requestFullscreen();
+        } else if (player.mozRequestFullScreen) {
+          player.mozRequestFullScreen(); // Firefox
+        } else if (player.webkitRequestFullscreen) {
+          player.webkitRequestFullscreen(); // Chrome, Safari & Opera
+        } else if (player.msRequestFullscreen) {
+          player.msRequestFullscreen(); // Edge
+        }
+        isFullscreen = true;
+      } else { // If already fullscreen
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen(); // Firefox
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen(); // Chrome, Safari & Opera
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen(); // Edge
+        }
+        isFullscreen = false;
+      }
+    }
+  });
+
 window.addEventListener('load', function () {
 
 

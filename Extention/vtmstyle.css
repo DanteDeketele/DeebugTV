@@ -1,16 +1,5 @@
-body{
-    font-family: Arial, sans-serif;
-    background-color: #14191e;
-    color: #ffffff;
-    cursor:none;
-}
-
-a{
-    border-radius: 15px;
-}
 
 :focus,
-:active,
 .active{
     border: 5px solid white;
     border-radius: 15px;
@@ -20,7 +9,6 @@ a{
     box-shadow: 0px 0px 10px #fff;
 }
 
-
-.section__main{
-    padding-bottom: 0;
+.teaser__img, .teaser__body, .teaser__inner-wrapper, .teaser, .teaser--portrait{
+    border-radius: 15px;
 }
