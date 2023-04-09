@@ -97,7 +97,7 @@ function loadAPI() {
           selectedRow++;
         }
 
-        if (selectedRow <= 1) {
+        if (selectedRow <= 0) {
           // Scroll to the top of the page when the first row is selected
           window.scroll({ top: 0, left: 0, behavior: 'smooth' });
         } else {
