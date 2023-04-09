@@ -10,8 +10,9 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #1d1d1d;
+    background-color: #14191e;
     color: #ffffff;
+    cursor: none;
   }
   
   .banner {
@@ -133,6 +134,7 @@
   }
   
   .live-list{
+    height: 50px;
   }
 
   .live-list .live-item{

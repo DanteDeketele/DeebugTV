@@ -1,43 +1,5 @@
 console.log("DeebugTV Loaded.");
-
-window.addEventListener('load', function() {
 var isFullscreen = false;
-
-// Add a keyboard event listener
-document.addEventListener('keydown', function(event) {
-  if (event.keyCode === 70) { // F key
-    var player = document.querySelector('.theoplayer');
-    if (player == null) return;
-    if (!isFullscreen) { // If not already fullscreen
-      if (player.requestFullscreen) {
-        player.requestFullscreen();
-      } else if (player.mozRequestFullScreen) {
-        player.mozRequestFullScreen(); // Firefox
-      } else if (player.webkitRequestFullscreen) {
-        player.webkitRequestFullscreen(); // Chrome, Safari & Opera
-      } else if (player.msRequestFullscreen) {
-        player.msRequestFullscreen(); // Edge
-      }
-      isFullscreen = true;
-    } else { // If already fullscreen
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen(); // Firefox
-      } else if (document.webkitExitFullscreen) {
-        document.webkitExitFullscreen(); // Chrome, Safari & Opera
-      } else if (document.msExitFullscreen) {
-        document.msExitFullscreen(); // Edge
-      }
-      isFullscreen = false;
-    }
-  }
-});
-
-
-});
-
-
 
 
 // Check if there are any row classes on the page
@@ -56,6 +18,34 @@ if (rows.length === 0) {
   rows[activeRowIndex].querySelectorAll('a:not(.media__link)')[activeLinkIndex].focus();
   // Add an event listener to the document to listen for arrow key presses
   document.addEventListener('keydown', (event) => {
+    if (event.keyCode === 70) { // F key
+      var player = document.querySelector('.theoplayer');
+      if (player == null) return;
+      if (!isFullscreen) { // If not already fullscreen
+        if (player.requestFullscreen) {
+          player.requestFullscreen();
+        } else if (player.mozRequestFullScreen) {
+          player.mozRequestFullScreen(); // Firefox
+        } else if (player.webkitRequestFullscreen) {
+          player.webkitRequestFullscreen(); // Chrome, Safari & Opera
+        } else if (player.msRequestFullscreen) {
+          player.msRequestFullscreen(); // Edge
+        }
+        isFullscreen = true;
+      } else { // If already fullscreen
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen(); // Firefox
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen(); // Chrome, Safari & Opera
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen(); // Edge
+        }
+        isFullscreen = false;
+      }
+    }
+
     if (event.key === 'ArrowUp') {
       // Move the active row up one position
       activeRowIndex = (activeRowIndex - 1 + rows.length) % rows.length;

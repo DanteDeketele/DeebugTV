@@ -26,6 +26,9 @@
           ],
           "js": [
             "play4script.js", "loader.js"
+          ],
+          "css": [
+            "play4style.css"
           ]
         },
         {
