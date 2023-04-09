@@ -1,24 +1,7 @@
 console.log("DeebugTV Loaded.");
 var isFullscreen = false;
-
-
-// Check if there are any row classes on the page
-const rows = document.querySelectorAll('.flickity-slider, .theoplayer, .hero-video__actions, .hero__actions, .header');
-
-
-
-if (rows.length === 0) {
-  console.log('No rows found on the page');
-} else {
-  // Set the index of the currently active row to 0
-  let activeRowIndex = 0;
-
-  // Set the index of the currently active link within the row to 0
-  let activeLinkIndex = 0;
-  rows[activeRowIndex].querySelectorAll('a:not(.media__link)')[activeLinkIndex].focus();
-  // Add an event listener to the document to listen for arrow key presses
-  document.addEventListener('keydown', (event) => {
-    if (event.keyCode === 70) { // F key
+document.addEventListener('keydown', (event) => {
+if (event.keyCode === 70) { // F key
       var player = document.querySelector('.theoplayer');
       if (player == null) return;
       if (!isFullscreen) { // If not already fullscreen
@@ -45,7 +28,25 @@ if (rows.length === 0) {
         isFullscreen = false;
       }
     }
+  });
 
+
+// Check if there are any row classes on the page
+const rows = document.querySelectorAll('.flickity-slider, .theoplayer, .hero-video__actions, .hero__actions, .header, .banner');
+
+
+
+if (rows.length === 0) {
+  console.log('No rows found on the page');
+} else {
+  // Set the index of the currently active row to 0
+  let activeRowIndex = 0;
+
+  // Set the index of the currently active link within the row to 0
+  let activeLinkIndex = 0;
+  rows[activeRowIndex].querySelectorAll('a:not(.media__link)')[activeLinkIndex].focus();
+  // Add an event listener to the document to listen for arrow key presses
+  document.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowUp') {
       // Move the active row up one position
       activeRowIndex = (activeRowIndex - 1 + rows.length) % rows.length;
@@ -61,22 +62,18 @@ if (rows.length === 0) {
     } else if (event.key === 'ArrowLeft') {
       // Move the active link within the row to the left
       activeLinkIndex = (activeLinkIndex - 1 + rows[activeRowIndex].querySelectorAll('a:not(.media__link)').length) % rows[activeRowIndex].querySelectorAll('a:not(.media__link)').length;
+      event.preventDefault();
     } else if (event.key === 'ArrowRight') {
       // Move the active link within the row to the right
       activeLinkIndex = (activeLinkIndex + 1) % rows[activeRowIndex].querySelectorAll('a:not(.media__link)').length;
+      event.preventDefault();
     }
 
     // Move the mouse over the active row and link
     const activeLink = rows[activeRowIndex].querySelectorAll('a:not(.media__link)')[activeLinkIndex];
     activeLink.focus();
-    console.log(rows[activeRowIndex]);
-
+    rows[activeRowIndex].scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
+    console.log(activeLink);
+    activeLink.focus();
   });
 }
-
-var styleElement = document.createElement('style');
-    styleElement.id = 'remove-scroll-style';
-    styleElement.textContent =
-        'html::-webkit-scrollbar{display:none !important}' +
-        'body::-webkit-scrollbar{display:none !important}';
-    document.getElementsByTagName('body')[0].appendChild(styleElement);
