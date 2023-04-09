@@ -1,1 +1,0 @@
-To focus on the menu on startup, press escape, this key is also used to go back to the main menu.
