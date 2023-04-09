@@ -5,8 +5,7 @@
     "description": "Vlaamse TV op je PC",
     
     "chrome_url_overrides": {
-        "newtab": "index.html",
-        "focus": true
+        "newtab": "index.html"
     },
     "icons":{
       "16": "Logo.png",
