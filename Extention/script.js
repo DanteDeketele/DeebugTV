@@ -1,3 +1,36 @@
+const overlay = document.getElementById('overlay');
+
+// Show the overlay if the active tab is not the current tab or if the page is still loading
+chrome.tabs.onActivated.addListener(() => {
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    if (tabs[0].id !== chrome.tabs.TAB_ID_NONE && tabs[0].id !== chrome.tabs.TAB_ID_UNKNOWN) {
+      chrome.tabs.get(tabs[0].id, (tab) => {
+        if (!tab.url.startsWith('chrome://')) {
+          overlay.style.display = 'none';
+        } else {
+          overlay.style.display = 'flex';
+        }
+      });
+    }
+  });
+});
+
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+  if (changeInfo.status === 'complete' && tab.active && !tab.url.startsWith('chrome://')) {
+    overlay.style.display = 'none';
+  } else if (tab.active) {
+    overlay.style.display = 'flex';
+  }
+});
+
+// Hide the overlay when the Escape key is pressed
+document.addEventListener('keydown', (event) => {
+  
+    overlay.style.display = 'none';
+  
+});
+
+
 const apiURL = "https://raw.githubusercontent.com/DanteDeketele/DeebugTV/main/api.json";
 
 // Load the API data and update the page
