@@ -1,0 +1,106 @@
+<layout>
+    
+    <!-- Menus here -->
+
+    
+
+    <menu title="Streaming">
+        <entry title="VTM GO">
+            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen --kiosk --user-agent="Mozilla/5.0 (Linux; Tizen 2.3; SmartHub; SMART-TV; SmartTV; U; Maple2012) AppleWebKit/538.1+ (KHTML, like Gecko) TV Safari/538.1+" https://vtm.be/vtmgo</command>
+            <card>
+                <icon>.\assets\icons\vtmgo.png</icon>
+                <background>#000000</background>
+            </card>
+        </entry>
+
+        <entry title="VRT MAX">
+            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen --kiosk --user-agent="Mozilla/5.0 (Linux; Tizen 2.3; SmartHub; SMART-TV; SmartTV; U; Maple2012) AppleWebKit/538.1+ (KHTML, like Gecko) TV Safari/538.1+" https://www.vrt.be/vrtnu/</command>
+            <card>
+                <icon>.\assets\icons\vrtmax.png</icon>
+                <background>#020b26</background>
+            </card>
+        </entry>
+        <entry title="GoPlay">
+            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen --kiosk --user-agent="Mozilla/5.0 (Linux; Tizen 2.3; SmartHub; SMART-TV; SmartTV; U; Maple2012) AppleWebKit/538.1+ (KHTML, like Gecko) TV Safari/538.1+" https://www.goplay.be/</command>
+            <card>
+                <icon>.\assets\icons\goplay.png</icon>
+                <background>#1c242b</background>
+            </card>
+        </entry>
+        <entry title="Netflix">
+            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen --kiosk --user-agent="Mozilla/5.0 (Linux; Tizen 2.3; SmartHub; SMART-TV; SmartTV; U; Maple2012) AppleWebKit/538.1+ (KHTML, like Gecko) TV Safari/538.1+" https://www.netflix.com/be-en/Login</command>
+            <card>
+                <icon>.\assets\icons\netflix.svg</icon>
+                <background>#FFFFFF</background>
+            </card>
+        </entry>
+        
+        <entry title="YouTube">
+            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen --kiosk --user-agent="Mozilla/5.0 (Linux; Tizen 2.3; SmartHub; SMART-TV; SmartTV; U; Maple2012) AppleWebKit/538.1+ (KHTML, like Gecko) TV Safari/538.1+" https://www.netflix.com/be-en/Login</command>
+            <card>
+                <icon>.\assets\icons\youtube.svg</icon>
+                <background>#FFFFFF</background>
+            </card>
+        </entry>
+
+        <entry title="Disney+">
+            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen --kiosk --user-agent="Mozilla/5.0 (Linux; Tizen 2.3; SmartHub; SMART-TV; SmartTV; U; Maple2012) AppleWebKit/538.1+ (KHTML, like Gecko) TV Safari/538.1+" https://www.disneyplus.com/login</command>
+            <card>.\assets\icons\disneyplus.svg</card>
+        </entry>
+    </menu>
+
+    <menu title="Live TV">
+    
+        <entry title="VTM">
+            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen --kiosk --user-agent="Mozilla/5.0 (Linux; Tizen 2.3; SmartHub; SMART-TV; SmartTV; U; Maple2012) AppleWebKit/538.1+ (KHTML, like Gecko) TV Safari/538.1+" https://vtm.be/vtmgo/live-kijken/vtm</command>
+            <card>
+                <icon>.\assets\icons\vtm.png</icon>
+                <background>#000000</background>
+            </card>
+        </entry>
+
+    </menu>
+
+    <menu title="Games">
+    
+        <entry title="Steam">
+            <command>"C:\Program Files (x86)\Steam\steam.exe" steam://open/bigpicture</command>
+            <card>
+                <icon>.\assets\icons\steam.svg</icon>
+                <background>#000000</background>
+            </card>
+        </entry>
+
+    </menu>
+
+    <!-- Sidebar commands here -->
+    <menu title="Systeem">
+        <entry title="Afsluiten">
+            <command>:shutdown</command>
+            <card>
+                <icon>.\assets\icons\shutdown.png</icon>
+                <background>#000000</background>
+            </card>
+        </entry>
+        <entry title="Slaapstand">
+            <command >:sleep</command>
+            <card>
+                <background>#000000</background>
+            </card>
+        </entry>
+        <entry title="Herstarten">
+            <command >:restart</command>
+            <card>
+                <icon>.\assets\icons\restart.png</icon>
+                <background>#000000</background>
+            </card>
+        </entry>
+        <entry title="Launcher Afsluiten">
+            <command >:quit</command>
+            <card>
+                <background>#000000</background>
+            </card>
+        </entry>
+    </menu>
+
+</layout>

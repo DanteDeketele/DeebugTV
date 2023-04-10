@@ -1,6 +1,8 @@
 
   chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    if (request.action === "openMenuPage") {
-      chrome.tabs.update({ url: chrome.runtime.getURL("index.html") });
+    if (request.action === "escapeChrome") {
+      chrome.windows.getCurrent(function(window) {
+        chrome.windows.remove(window.id);
+      });
     }
   });

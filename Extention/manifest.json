@@ -4,16 +4,14 @@
     "version": "1.0",
     "description": "Vlaamse TV op je PC",
     
-    "chrome_url_overrides": {
-        "newtab": "index.html"
-    },
     "icons":{
       "16": "Logo.png",
       "48": "Logo.png",
       "128": "Logo.png"
     },
     "permissions": [
-    "tabs"
+    "tabs",
+    "commands"
     ],
     "background": {
       "service_worker": "background.js"
@@ -53,6 +51,7 @@
           ]
         }
       ]
+         
       
   }
   
