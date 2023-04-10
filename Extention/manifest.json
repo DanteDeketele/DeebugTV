@@ -41,7 +41,7 @@
         },
         {
           "matches": [
-            "https://vtm.be/vtmgo*"
+            "https://vtm.be/vtmgo/*"
           ],
           "js": [
             "vtmscript.js", "loader.js"
@@ -52,16 +52,15 @@
         },
         {
           "matches": [
-            "https://www.netflix.com*"
+            "https://www.netflix.com/*"
           ],
           "js": [
             "loader.js"
           ]
-        }
-        ,
+        },
         {
           "matches": [
-            "youtube.com/tv*"
+            "https://youtube.com/tv/*"
           ],
           "js": [
             "loader.js"
