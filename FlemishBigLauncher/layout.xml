@@ -6,7 +6,7 @@
 
     <menu title="Streaming">
         <entry title="VTM GO">
-            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen --kiosk --user-agent="Mozilla/5.0 (Linux; Tizen 2.3; SmartHub; SMART-TV; SmartTV; U; Maple2012) AppleWebKit/538.1+ (KHTML, like Gecko) TV Safari/538.1+" https://vtm.be/vtmgo</command>
+            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen https://vtm.be/vtmgo</command>
             <card>
                 <icon>.\assets\icons\vtmgo.png</icon>
                 <background>#000000</background>
@@ -14,21 +14,21 @@
         </entry>
 
         <entry title="VRT MAX">
-            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen --kiosk --user-agent="Mozilla/5.0 (Linux; Tizen 2.3; SmartHub; SMART-TV; SmartTV; U; Maple2012) AppleWebKit/538.1+ (KHTML, like Gecko) TV Safari/538.1+" https://www.vrt.be/vrtnu/</command>
+            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen  https://www.vrt.be/vrtnu/</command>
             <card>
                 <icon>.\assets\icons\vrtmax.png</icon>
                 <background>#020b26</background>
             </card>
         </entry>
         <entry title="GoPlay">
-            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen --kiosk --user-agent="Mozilla/5.0 (Linux; Tizen 2.3; SmartHub; SMART-TV; SmartTV; U; Maple2012) AppleWebKit/538.1+ (KHTML, like Gecko) TV Safari/538.1+" https://www.goplay.be/</command>
+            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen  https://www.goplay.be/</command>
             <card>
                 <icon>.\assets\icons\goplay.png</icon>
                 <background>#1c242b</background>
             </card>
         </entry>
         <entry title="Netflix">
-            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen --kiosk --user-agent="Mozilla/5.0 (Linux; Tizen 2.3; SmartHub; SMART-TV; SmartTV; U; Maple2012) AppleWebKit/538.1+ (KHTML, like Gecko) TV Safari/538.1+" https://www.netflix.com/be-en/Login</command>
+            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen  https://www.netflix.com/be-en/Login</command>
             <card>
                 <icon>.\assets\icons\netflix.svg</icon>
                 <background>#FFFFFF</background>
@@ -36,7 +36,7 @@
         </entry>
         
         <entry title="YouTube">
-            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen --kiosk --user-agent="Mozilla/5.0 (Linux; Tizen 2.3; SmartHub; SMART-TV; SmartTV; U; Maple2012) AppleWebKit/538.1+ (KHTML, like Gecko) TV Safari/538.1+" https://www.netflix.com/be-en/Login</command>
+            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen  https://youtube.com/tv</command>
             <card>
                 <icon>.\assets\icons\youtube.svg</icon>
                 <background>#FFFFFF</background>
@@ -44,7 +44,7 @@
         </entry>
 
         <entry title="Disney+">
-            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen --kiosk --user-agent="Mozilla/5.0 (Linux; Tizen 2.3; SmartHub; SMART-TV; SmartTV; U; Maple2012) AppleWebKit/538.1+ (KHTML, like Gecko) TV Safari/538.1+" https://www.disneyplus.com/login</command>
+            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen  https://www.disneyplus.com/login</command>
             <card>.\assets\icons\disneyplus.svg</card>
         </entry>
     </menu>
@@ -52,9 +52,33 @@
     <menu title="Live TV">
     
         <entry title="VTM">
-            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen --kiosk --user-agent="Mozilla/5.0 (Linux; Tizen 2.3; SmartHub; SMART-TV; SmartTV; U; Maple2012) AppleWebKit/538.1+ (KHTML, like Gecko) TV Safari/538.1+" https://vtm.be/vtmgo/live-kijken/vtm</command>
+            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen  https://vtm.be/vtmgo/live-kijken/vtm</command>
             <card>
                 <icon>.\assets\icons\vtm.png</icon>
+                <background>#000000</background>
+            </card>
+        </entry>
+
+        <entry title="een">
+            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen  https://www.vrt.be/vrtnu/livestream/video/een/</command>
+            <card>
+                <icon>.\assets\icons\een.png</icon>
+                <background>#000000</background>
+            </card>
+        </entry>
+
+        <entry title="Canvas">
+            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen  https://www.vrt.be/vrtnu/livestream/video/canvas/</command>
+            <card>
+                <icon>.\assets\icons\canvas.png</icon>
+                <background>#000000</background>
+            </card>
+        </entry>
+
+        <entry title="Vier">
+            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen  https://www.goplay.be/tv-gids</command>
+            <card>
+                <icon>.\assets\icons\vier.png</icon>
                 <background>#000000</background>
             </card>
         </entry>

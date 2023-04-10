@@ -49,6 +49,23 @@
           "css": [
             "vtmstyle.css"
           ]
+        },
+        {
+          "matches": [
+            "https://www.netflix.com*"
+          ],
+          "js": [
+            "loader.js"
+          ]
+        }
+        ,
+        {
+          "matches": [
+            "youtube.com/tv*"
+          ],
+          "js": [
+            "loader.js"
+          ]
         }
       ]
          

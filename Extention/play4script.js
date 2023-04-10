@@ -77,3 +77,15 @@ if (rows.length === 0) {
     activeLink.focus();
   });
 }
+
+// Wait for the page to finish loading
+window.addEventListener('load', function() {
+  // Find the "is-now" div element
+  const isNowDiv = document.querySelector('.is-now');
+  if (isNowDiv) {
+    // Extract the link URL from the anchor tag
+    const link = isNowDiv.querySelector('a').href;
+    // Redirect to the link URL
+    window.location.href = link;
+  }
+});
