@@ -49,6 +49,23 @@
         </entry>
     </menu>
 
+    <menu title="Series">
+        <entry title="Home and Away">
+            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen  https://vtm.be/vtmgo/home-and-away~360de256-3828-47f9-89b9-c8f82d5a4199</command>
+            <card>
+                <icon>.\assets\icons\homeandaway.png</icon>
+                <background>#000000</background>
+            </card>
+        </entry>
+        <entry title="Journaal">
+            <command>"C:\Program Files\Google\Chrome\Application\chrome.exe" --start-fullscreen  https://www.vrt.be/vrtnu/a-z/vrt-nws-journaal/</command>
+            <card>
+                <icon>.\assets\icons\journaal.jpg</icon>
+                <background>#000000</background>
+            </card>
+        </entry>
+    </menu>
+
     <menu title="Live TV">
     
         <entry title="VTM">
